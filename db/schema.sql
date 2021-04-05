@@ -1,15 +1,12 @@
-/*Creates or drops and recreates database if exists */
-DROP DATABASE IF EXISTS burgers_db;
-CREATE database burgers_db;
+### Schema
 
-USE burgers_db;
+CREATE DATABASE cat_db;
+USE cat_db;
 
-/* Creates table for burgers */
-DROP TABLE IF EXISTS burgers;
-CREATE TABLE burgers (
-    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    burger_name VARCHAR(45) NOT NULL,
-    devoured BOOLEAN NOT NULL DEFAULT 0
+CREATE TABLE cats
+(
+	id int NOT NULL AUTO_INCREMENT,
+	name varchar(255) NOT NULL,
+	sleepy BOOLEAN DEFAULT false,
+	PRIMARY KEY (id)
 );
-
-
