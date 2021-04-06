@@ -15,7 +15,7 @@ Completed as a homework assignment for Trilogy's Fullstack Web Development Progr
 The application allows a user to add burgers of a desired name to a list, devour them by pressing a button, and moving the devoured burger into a separate list.
 
 ## Usage:
-[Click here](https://burgerloggerzl.herokuapp.com//) to access the application deployed on Heroku
+[Click here](https://burgerloggerzl.herokuapp.com/) to access the application deployed on Heroku
 
 ## License: 
 MIT
