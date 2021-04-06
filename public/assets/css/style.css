@@ -7,6 +7,19 @@ h1 {
     color: crimson;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.button{
+    background-color: rgb(30, 38, 56);
+    color: crimson;
+    margin: 5px;
+
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -14,11 +27,12 @@ h1 {
   }
 
 .card{
+    text-align: center;
     background-color: rgb(105, 124, 160);
     border-radius: 5px;
     margin: 2.5%;
     padding: 1%;
-    color: red;
+    color: rgb(118, 10, 15);
 }
 .topCard{
     float: left;
@@ -26,5 +40,5 @@ h1 {
 }
 
 .summoningCard{
-    float: left;
+    float: center;
 }

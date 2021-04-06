@@ -14,7 +14,7 @@
   {{#unless devoured}}
   <li>
     {{burger_name}}
-    <button class="devourButton" id="{{this.id}}" onclick="devourBurger(this.id)">Devour</button>
+    <button class="button devourButton" id="{{this.id}}" onclick="devourBurger(this.id)">Devour</button>
   </li>
   {{/unless}}
   {{/each}}
@@ -46,6 +46,6 @@
     <input type="text" id="newBurgerName" name="name">
   </div>
 
-  <button type="submit" onclick="summonBurger(newBurgerName.value)">Summon Burger</button>
+  <button class="button" type="submit" onclick="summonBurger(newBurgerName.value)">Summon Burger</button>
 </form>
 </div>
