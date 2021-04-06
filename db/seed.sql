@@ -6,3 +6,4 @@ VALUES
 ('Burg-eoisie'),
 ('Completely Regular Cheeseburger')
 ;
+INSERT INTO burgers (burger_name, devoured) VALUES ('Ancient Mesopotamian Burger', true);
