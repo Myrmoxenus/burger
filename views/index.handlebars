@@ -1,7 +1,14 @@
 <h1>Ceaseless Consumer, Devour These Burgers</h1>
 
-<h2>Burgers To Be Devoured:</h2>
+<img src="assets/burgerVillain.png" height=600px width=600px alt="Villainous Burger Character" class="center">
 
+
+
+
+
+<div class="column">
+<div class="card topCard toBeDevouredCard">
+  <h2>Burgers To Be Devoured:</h2>
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
@@ -12,9 +19,12 @@
   {{/unless}}
   {{/each}}
 </ul>
+</div>
+</div>
 
-<h2>Burgers That Have Been Devoured</h2>
-
+<div class="column">
+<div class="card topCard alreadyDevouredCard">
+  <h2>Burgers That Have Been Devoured:</h2>
 <ul>
   {{#each burgers}}
   {{#if devoured}}
@@ -24,8 +34,11 @@
   {{/if}}
   {{/each}}
 </ul>
+</div>
+</div>
 
-<h2>Summon a New Burger</h2>
+<div class="card summoningCard">
+<h2>Summon a New Burger:</h2>
 <form id="create-form">
 
   <div class="form-group">
@@ -35,3 +48,4 @@
 
   <button type="submit" onclick="summonBurger(newBurgerName.value)">Summon Burger</button>
 </form>
+</div>
