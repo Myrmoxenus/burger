@@ -1,24 +1,18 @@
 // Set up MySQL connection.
 const mysql = require('mysql');
+var connection
 
-/*
 if (process.env.JAWSDB_URL){
-const connection = mysql.createConnection(provess.env.JAWSDB_URL)
+connection = mysql.createConnection(provess.env.JAWSDB_URL)
 }
 else{
-const connection = mysql.createConnection({
+connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  // NOTE: Be sure to add your MySQL password here!
   password: 'password',
   database: 'burgers_db',
 })}
-*/
-
-//Connection is made through connection string in Heroku environment
-const connection = mysql.createConnection(provess.env.JAWSDB_URL)
-
 
 // Make connection.
 connection.connect((err) => {
